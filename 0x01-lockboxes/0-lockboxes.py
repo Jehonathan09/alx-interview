@@ -31,19 +31,6 @@ def canUnlockAll(boxes):
 
     # Check if all boxes are visited
     return all(visited)
-
-# Example usage:
-boxes = [
-    [1],        # Box 0 has key 1 which opens box 1
-    [2],        # Box 1 has key 2 which opens box 2
-    [3],        # Box 2 has key 3 which opens box 3
-    [0]         # Box 3 has key 0 which opens box 0
-]
-print(canUnlockAll(boxes))  # Output: True
-
-
-if __name__ == '__main__':
-    boxes = [[1], [2], [3], [4], []]
     print(canUnlockAll(boxes))
     boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
     print(canUnlockAll(boxes))
